@@ -24,7 +24,7 @@ const TodoList = () => {
           >
             <span className="flex gap-2 items-center">
               <input type="checkbox" onClick={() => dispatch(completedTodo(item.id))} checked={item.completed} className="checkbox" />
-              <p className={`${item.completed ? ' bg-orange-800': ' bg-emerald-500'}`}>{item.text}</p>
+              <p className={`${item.completed ? ' ': ' '}`}>{item.text}</p>
             </span>
 
             <IoCloseCircleOutline onClick={() => dispatch(deleteTodo(item.id))} className="text-2xl cursor-pointer" />
