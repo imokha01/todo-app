@@ -14,6 +14,7 @@ const Todo = () => {
 
   return (
     <div className=" m-10 flex flex-col gap-10 w-screen overflow-x-hidden justify-center items-center">
+      <h1 className="text-3xl underline ">MY TODO LIST</h1>
       <div className="flex w-full  items-center justify-center gap-1">
         <input
           onChange={handleInput}
